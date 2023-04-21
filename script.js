@@ -35,14 +35,16 @@ async function onSubmit(event) {
   }
   console.log("code", code);
 
-  const data = {
-    name: "John Doe",
-    email: "johndoe@example.com"
+  const mailData = {
+    code: code,
+    name: name,
+    number: number,
+    email: email
   };
 
   await fetch('/.netlify/functions/mail-log', {
     method: 'POST',
-    body: JSON.stringify(data)
+    body: JSON.stringify(mailData)
   })
     .then(response => response.json())
     .then(data => console.log(data))
