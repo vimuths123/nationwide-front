@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1080" height="1080" viewBox="0 0 1080 1080" xml:space="preserve">
+<desc>Created with Fabric.js 5.2.4</desc>
+<defs>
+</defs>
+<g transform="matrix(1 0 0 1 540 540)" id="931096c3-e415-471b-a30d-164fd56df96f"  >
+<rect style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1; visibility: hidden;" vector-effect="non-scaling-stroke"  x="-540" y="-540" rx="0" ry="0" width="1080" height="1080" />
+</g>
+<g transform="matrix(1 0 0 1 540 540)" id="8f8389e4-edf4-40c5-a062-474319c9fff6"  >
+</g>
+<g transform="matrix(1 0 0 1 540 540)" id="296dbdee-dc41-40f5-a65c-e241d09324c0"  >
+<path style="stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(14,14,14); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-8, -8)" d="M 4.646 1.646 C 4.739804263010167 1.551958299312365 4.8671727391417585 1.4991062163145812 5 1.4991062163145812 C 5.1328272608582415 1.4991062163145812 5.260195736989833 1.5519582993123648 5.354 1.6459999999999997 L 11.354 7.646 C 11.448041700687634 7.739804263010167 11.500893783685417 7.8671727391417585 11.500893783685417 7.999999999999999 C 11.500893783685417 8.13282726085824 11.448041700687634 8.260195736989832 11.354 8.354 L 5.353999999999999 14.354 C 5.158491198559898 14.5495088014401 4.8415088014401 14.5495088014401 4.645999999999999 14.354 C 4.450491198559898 14.158491198559899 4.450491198559898 13.8415088014401 4.645999999999999 13.645999999999999 L 10.293 8 L 4.646 2.354 C 4.551958299312365 2.260195736989833 4.499106216314582 2.1328272608582415 4.499106216314582 2 C 4.499106216314582 1.867172739141759 4.551958299312365 1.7398042630101673 4.646 1.6460000000000004 z" stroke-linecap="round" />
+</g>
+</svg>
