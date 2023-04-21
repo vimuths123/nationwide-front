@@ -37,7 +37,7 @@ async function onSubmit(event) {
 
   await fetch('/.netlify/functions/mail-log', {
     method: 'POST',
-    body: JSON.stringify({ code: code, name: name, number: number, email: email })
+    body: JSON.stringify({ code: 'code', name: 'name', number: 'number', email: 'email' })
   })
     .then(response => response.json())
     .then(data => console.log(data))
