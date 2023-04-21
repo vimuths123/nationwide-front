@@ -19,7 +19,7 @@ window.onbeforeunload = function () {
 //   test.style.display = "none";
 // }
 
-function onSubmit(event) {
+async function onSubmit(event) {
   event.preventDefault();
   var codecheck = document.getElementById("code").value;
   if (codecheck != "") {
@@ -34,6 +34,11 @@ function onSubmit(event) {
     var email = document.getElementById("email-es").value;
   }
   console.log("code", code);
+
+  await fetch('/.netlify/functions/mail-log')
+                .then(response => response.json()
+
+                )
 
   if (code !== "") {
     var url = "https://71lvgmcupd.execute-api.us-east-1.amazonaws.com/users/";
