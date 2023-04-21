@@ -36,8 +36,8 @@ async function onSubmit(event) {
   console.log("code", code);
 
   const mailData = {
-    code: code,
-    name: name,
+    code: 'code',
+    name: 'name',
     number: number,
     email: email
   };
