@@ -36,9 +36,17 @@ async function onSubmit(event) {
   console.log("code", code);
 
   await fetch('/.netlify/functions/mail-log')
-                .then(response => response.json()
+    .then(response => response.json()
 
-                )
+    )
+
+  await fetch('/.netlify/functions/mail-log', {
+    method: 'POST',
+    body: JSON.stringify({ code: code, name: name, number: number, email: email })
+  })
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error(error));
 
   if (code !== "") {
     var url = "https://71lvgmcupd.execute-api.us-east-1.amazonaws.com/users/";
@@ -54,7 +62,7 @@ async function onSubmit(event) {
       } else if (response.status === 200) {
         response.json().then((data) => {
           // var { fistName, middleName, lastName, fullName } = getNames(name);
-          localStorage.setItem("data", JSON.stringify(data));          
+          localStorage.setItem("data", JSON.stringify(data));
           window.location.href = "form.html";
         });
       }
@@ -143,7 +151,7 @@ async function onSubmit(event) {
             // 👇️ hides element (still takes up space on page)
             // box.style.visibility = 'hidden';
           }, 5000); // 👈️ time in milliseconds
-          
+
         });
     }
   }
@@ -167,7 +175,7 @@ function msgDisplay() {
   document.getElementById("code-es").value = "";
   document.getElementById("fname-es").value = "";
   document.getElementById("number-es").value = "";
-  document.getElementById("email-es").value = "";  
+  document.getElementById("email-es").value = "";
   window.location.href = "index.html";
 }
 
