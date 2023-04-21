@@ -44,6 +44,9 @@ async function onSubmit(event) {
 
   await fetch('/.netlify/functions/mail-log', {
     method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
     body: JSON.stringify(mailData)
   })
     .then(response => response.json())
